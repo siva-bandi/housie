@@ -1,0 +1,13 @@
+<h1>Ticket</h1>
+
+<table>
+	<% @ticket_grid.each do |row| %>
+		<tr>
+			<% row.each do |val| %>
+				<td><%= val %></td>
+			<% end %>
+		</tr>
+	<% end %>
+</table>
+<br>
+<%= link_to "Generate A New Ticket", '/tickets/generate' %>
